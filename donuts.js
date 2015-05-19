@@ -44,16 +44,17 @@ TopPotDonuts.prototype.render = function(locationName, id) {
   row.appendChild(cell);
 }
 
-var downtown = new TopPotDonuts (8, 43, 4.50);
-var capitolHill = new TopPotDonuts (4, 37, 2.00);
-var southLakeUnion = new TopPotDonuts (9, 23, 6.33);
-var wedgewood = new TopPotDonuts (2, 28, 1.25);
-var ballard = new TopPotDonuts (8, 58, 3.75);
+  var downtown = new TopPotDonuts (8, 43, 4.50);
+  var capitolHill = new TopPotDonuts (4, 37, 2.00);
+  var southLakeUnion = new TopPotDonuts (9, 23, 6.33);
+  var wedgewood = new TopPotDonuts (2, 28, 1.25);
+  var ballard = new TopPotDonuts (8, 58, 3.75);
 
-downtown.render("Downtown", "dt");
-capitolHill.render("Capitol Hill", "ch");
-southLakeUnion.render("South Lake Union", "slu");
-wedgewood.render("Wedgewood", "wed");
-ballard.render("Ballard", "bal");
+  downtown.render("Downtown", "dt");
+  capitolHill.render("Capitol Hill", "ch");
+  southLakeUnion.render("South Lake Union", "slu");
+  wedgewood.render("Wedgewood", "wed");
+  ballard.render("Ballard", "bal");
+
 
 // Hana F., Will S., Nick K. and Michael T. assisted me with my Code.
