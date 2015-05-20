@@ -60,5 +60,18 @@ TopPotDonuts.prototype.render = function() {
     locations[k].render();
   }
 
+  var newDonutShop = function() {
+    var newLoc, minC, maxC, avgDon, brandNewLoc;
+
+  newLoc = document.getElementById('location').value;
+  minC = parseInt(document.getElementById('minCust').value);
+  maxC = parseInt(document.getElementById('maxCust').value);
+  avgDon = parseInt(document.getElementById('average').value);
+  brandNewLoc = new TopPotDonuts(newLoc, minC, maxC, avgDon);
+  locations.push(brandNewLoc);
+  brandNewLoc.render();
+
+}
+  document.getElementById('submit').addEventListener('click', newDonutShop);
 
 // Hana F., Will S., Nick K. and Michael T. assisted me with my Code.
