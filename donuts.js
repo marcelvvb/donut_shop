@@ -11,7 +11,7 @@ TopPotDonuts.prototype.generateRandom = function(min, max) {
 
 TopPotDonuts.prototype.donutsPerHour = function() {
   var customers = this.generateRandom(this.minChr, this.maxChr);
-  return Math.floor(customers * this.avgDpc);
+  return Math.floor(customers * this.avgDpc) + 1;
 }
 
 TopPotDonuts.prototype.donutsPerDay = function() {
