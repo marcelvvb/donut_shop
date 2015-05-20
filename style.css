@@ -1,1 +1,58 @@
+body {
+	font-family: Arial Narrow, Verdana; sans-serif;
+	font-family: 'Reenie Beanie';
+	font-size: 24px;
+	color:#002F2F; padding: 10px;
+	background-color:#EFECCA;
+
+}
+
+input, button {
+	padding: 6px 12px 6px 12px;
+	border: 1px solid #046380;
+	color:#046380;
+	border-radius: 12px;
+}
+
+#submit1:hover {
+	background-color:#E6E2AF;
+}
+
+#submit1:active {
+	background-color: #002F2F;
+}
+
+#submit1 {
+	color: #046380;
+}
+
+#submit1:focus{
+	color: #002F2F;
+}
+
+table {
+	text-align: left;
+	background-color: #A7A37E;
+	color: black;
+	width:600px;
+	border-radius: 12px;
+}
+
+th,td {
+	padding: 7px 10px 10px 10px;
+}
+
+th {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 90%;
+}
+
+tr.even {
+	background-color: #A7A37E;
+}
+
+tr.hover {
+	background-color: #E6E2AF;
+}
 
