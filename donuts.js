@@ -71,7 +71,7 @@ TopPotDonuts.prototype.render = function() {
   locations.push(brandNewLoc);
   brandNewLoc.render();
 
-}
+  }
   document.getElementById('submit').addEventListener('click', newDonutShop);
 
 // Hana F., Will S., Nick K. and Michael T. assisted me with my Code.
