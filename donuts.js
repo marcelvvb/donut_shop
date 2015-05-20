@@ -1,4 +1,5 @@
-var TopPotDonuts = function(minChr, maxChr, avgDpc) {
+var TopPotDonuts = function(locationName, minChr, maxChr, avgDpc) {
+  this.locationName = locationName;
   this.minChr = minChr;
   this.maxChr = maxChr;
   this.avgDpc = avgDpc;
@@ -24,11 +25,14 @@ TopPotDonuts.prototype.donutsPerDay = function() {
   return total;
 }
 
-TopPotDonuts.prototype.render = function(locationName, id) {
+TopPotDonuts.prototype.render = function() {
   var th = document.createElement('th');
-  var row = document.getElementById(id);
-  var thText = document.createTextNode(locationName);
+  var bakedDonuts = document.getElementById('bakedDonuts');
+  var row = document.createElement('tr');
+  var thText = document.createTextNode(this.locationName);
   th.appendChild(thText);
+  row.appendChild(th);
+  bakedDonuts.appendChild(row);
   var total = 0;
   for (var j = 0; j <= 11; j++) {
     var cell = document.createElement('td');
@@ -44,17 +48,30 @@ TopPotDonuts.prototype.render = function(locationName, id) {
   row.appendChild(cell);
 }
 
-  var downtown = new TopPotDonuts (8, 43, 4.50);
-  var capitolHill = new TopPotDonuts (4, 37, 2.00);
-  var southLakeUnion = new TopPotDonuts (9, 23, 6.33);
-  var wedgewood = new TopPotDonuts (2, 28, 1.25);
-  var ballard = new TopPotDonuts (8, 58, 3.75);
+  var locations = [];
 
-  downtown.render("Downtown", "dt");
-  capitolHill.render("Capitol Hill", "ch");
-  southLakeUnion.render("South Lake Union", "slu");
-  wedgewood.render("Wedgewood", "wed");
-  ballard.render("Ballard", "bal");
+  locations.push(new TopPotDonuts ("Downtown", 8, 43, 4.50));
+  locations.push(new TopPotDonuts ("Capitol Hill", 4, 37, 2.00));
+  locations.push(new TopPotDonuts ("South Lake Union", 9, 23, 6.33));
+  locations.push(new TopPotDonuts ("Wedgewood", 2, 28, 1.25));
+  locations.push(new TopPotDonuts ("Ballard", 8, 58, 3.75));
 
+  for (var k = 0; k < locations.length; k++) {
+    locations[k].render();
+  }
+
+  var newDonutShop = function() {
+    var newLoc, minC, maxC, avgDon, brandNewLoc;
+
+  newLoc = document.getElementById('location').value;
+  minC = parseInt(document.getElementById('minCust').value);
+  maxC = parseInt(document.getElementById('maxCust').value);
+  avgDon = parseInt(document.getElementById('average').value);
+  brandNewLoc = new TopPotDonuts(newLoc, minC, maxC, avgDon);
+  locations.push(brandNewLoc);
+  brandNewLoc.render();
+
+}
+  document.getElementById('submit').addEventListener('click', newDonutShop);
 
 // Hana F., Will S., Nick K. and Michael T. assisted me with my Code.
