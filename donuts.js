@@ -74,4 +74,4 @@ TopPotDonuts.prototype.render = function() {
   }
   document.getElementById('submit1').addEventListener('click', newDonutShop);
 
-// Hana F., Will S., Nick K. and Michael T. assisted me with my Code.
+// Hana F., Will S., Nick K., Kate S and Michael T. assisted me with my Code.
