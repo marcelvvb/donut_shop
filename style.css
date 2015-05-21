@@ -7,18 +7,23 @@ body {
 p {
 	text-align: center; }
 
+#headers {
+	font-size: 18px;
+	font-weight: bold; }
+
 img.small {
 width: 135px;
 height: 135px; }
 
 input, button {
-	padding: 6px 6px 6px 6px;
-	border: 1px solid #046380;
+	padding: 8px 8px 8px 8px;
+	border: 2px solid #046380;
 	color:#046380;
-	border-radius: 12px; }
+	border-radius: 12px;
+	border-bottom: 5px solid #000000; }
 
 #submit1:hover {
-	background-color:#E6E2AF; }
+	background-color:#81BEF7; }
 
 #submit1:active {
 	background-color: #002F2F; }
@@ -26,7 +31,7 @@ input, button {
 #submit1 {
 	color: #046380; }
 
-#submit1:focus{
+#submit1:focus {
 	color: #002F2F; }
 
 table {
