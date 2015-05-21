@@ -30,6 +30,7 @@ TopPotDonuts.prototype.render = function() {
   var bakedDonuts = document.getElementById('bakedDonuts');
   var row = document.createElement('tr');
   var thText = document.createTextNode(this.locationName);
+  th.className = 'cityName';
   th.appendChild(thText);
   row.appendChild(th);
   bakedDonuts.appendChild(row);

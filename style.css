@@ -7,7 +7,7 @@ body {
 p {
 	text-align: center; }
 
-#headers {
+.headers {
 	font-size: 18px;
 	font-weight: bold; }
 
@@ -18,7 +18,6 @@ height: 135px; }
 input, button {
 	padding: 8px 8px 8px 8px;
 	border: 2px solid #046380;
-	color:#046380;
 	border-radius: 12px;
 	border-bottom: 4px solid #000000; }
 
@@ -36,25 +35,18 @@ input, button {
 
 table {
 	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	background-color: #A4BCC8;
 	color: black;
-	width:600px;
+	width: 800px;
 	border-radius: 12px;
 	border-right:  4px solid #000000;
-	border-bottom: 4px solid #000000; }
+	border-bottom: 4px solid #000000; } /* can use page 320 for depth */
 
 th,td {
 	padding: 7px 10px 10px 10px; }
 
-th {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-size: 90%; }
+.cityName {
+	min-width: 110px; }
 
-tr.even {
-	background-color: #A7A37E; }
-
-tr.hover {
-	background-color: #E6E2AF; }
+	/* color combination from Top Pot Donuts */
