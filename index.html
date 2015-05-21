@@ -3,26 +3,23 @@
   <head>
     <title>Top Pot Donuts</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <meta name="description" content="guessing game">
       <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <p align="center">
-      <label>Location Name: <input id="location" type="text" placeholder="example: bellevue"></label>
+    <img src="images/tpd-logo2014.png" class="small" alt="Top Pot Donuts Logo" />
+    <p>
+    <strong>Daily donuts calculator. Fill in your city and the following numbers to find out how many donuts your shop needs to bake everyday!</strong>
     </p>
-    <p align="center">
-      <label>Minimum customers per hour: <input id="minCust" type="number" placeholder="example: "></label>
-    </p>
-    <p align="center">
-      <label>Maximum customers per hour: <input id="maxCust" type="number" placeholder="example: "></label>
-    </p>
-    <p align="center">
-      <label>Average donuts purchased per customer: <input id="average" type="number" placeholder="example: "></p>
-        <p align="center">
-        <button id="submit1">Submit</button></label>
+    <p>
+      <label>City: <input id="location" type="text" placeholder="enter location here"></label>
+      <label>Minimum: <input id="minCust" type="number" placeholder="customers per hour"></label>
+      <label>Maximum: <input id="maxCust" type="number" placeholder="customers per hour"></label>
+      <label>Average: <input id="average" type="number" placeholder="donuts purchased per customer"></label>
+      <button id="submit1">Submit</button>
     </p>
     <table id="bakedDonuts" align="center">
       <tr>
