@@ -20,7 +20,7 @@ input, button {
 	border: 2px solid #046380;
 	color:#046380;
 	border-radius: 12px;
-	border-bottom: 5px solid #000000; }
+	border-bottom: 4px solid #000000; }
 
 #submit1:hover {
 	background-color:#81BEF7; }
@@ -39,7 +39,9 @@ table {
 	background-color: #A4BCC8;
 	color: black;
 	width:600px;
-	border-radius: 12px; }
+	border-radius: 12px;
+	border-right:  4px solid #000000;
+	border-bottom: 4px solid #000000; }
 
 th,td {
 	padding: 7px 10px 10px 10px; }
