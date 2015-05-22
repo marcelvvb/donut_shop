@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Top Pot Donuts</title>
+    <title>Top Pot Doughnuts</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
       <meta charset="utf-8">
@@ -10,37 +10,49 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <img src="images/tpd-logo2014.png" class="small" alt="Top Pot Donuts Logo" />
-    <p>
-    <strong>Daily donuts calculator. Fill in your city and the following numbers to find out how many donuts your shop needs to bake everyday!</strong>
-    </p>
-    <p>
-      <label>City: <input id="location" type="text" placeholder="enter location here"></label>
-      <label>Minimum: <input id="minCust" type="number" placeholder="customers per hour"></label>
-      <label>Maximum: <input id="maxCust" type="number" placeholder="customers per hour"></label>
-      <label>Average: <input id="average" type="number" placeholder="donuts purchased per customer"></label>
-      <button id="submit1">Submit</button>
-    </p>
-    <table id="bakedDonuts">
-      <tr class="headers">
-        <th>Location</th>
-        <th>7:00am</th>
-        <th>8:00am</th>
-        <th>9:00am</th>
-        <th>10:00am</th>
-        <th>11:00am</th>
-        <th>12:00pm</th>
-        <th>1:00pm</th>
-        <th>2:00pm</th>
-        <th>3:00pm</th>
-        <th>4:00pm</th>
-        <th>5:00pm</th>
-        <th>6:00pm</th>
-        <th>Total</th>
-      </tr>
-    </table>
+    <div class="wrapper">
+      <header>
+        <img src="images/tpd-logo2014.png" class="logo" alt="Top Pot Donuts Logo" />
+        <h1>Top Pot Doughnuts</h1>
+      </header>
 
+      <section class="mainContent">
+          <fieldset class="save">
+          <legend>Daily doughnuts calculator</legend>
+          <label>City:</label>
+          <input id="location" type="text" placeholder="enter location here">
+          <label>Minimum:</label>
+          <input id="minCust" type="number" placeholder="customers per hour">
+          <label>Maximum:</label>
+          <input id="maxCust" type="number" placeholder="customers per hour">
+          <label>Average doughnuts per customer:</label>
+          <input id="average" type="number" placeholder="donuts per customer">
+          <button id="submit1">Submit</button>
+          </fieldset>
+          <table id="bakedDonuts" class="donutsTable">
+            <tr class="headers">
+              <th>Location</th>
+              <th>7:00am</th>
+              <th>8:00am</th>
+              <th>9:00am</th>
+              <th>10:00am</th>
+              <th>11:00am</th>
+              <th>12:00pm</th>
+              <th>1:00pm</th>
+              <th>2:00pm</th>
+              <th>3:00pm</th>
+              <th>4:00pm</th>
+              <th>5:00pm</th>
+              <th>6:00pm</th>
+              <th>Total</th>
+            </tr>
+          </table>
+        </section>
+          <footer>
+            <h3>footer</h3>
+          </footer>
     <script src="donuts.js"></script>
+    </div>
   </body>
 </html>
 <!--color scheme idea from Top Pot Donuts logo-->

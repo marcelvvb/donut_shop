@@ -1,25 +1,50 @@
 body {
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 16px;
 	color:#002F2F; padding: 10px;
-	background-color:#FAF4EE; }
+	background-color:#FAF4EE;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px; }
+
+header {
+	height: 135px;
+	width: 960px; }
+
+.logo {
+	float: left;
+	width: 135px; }
+
+h1 {
+	float:left;
+	font-size: 24px; }
+
+section.mainContent {
+	border-right: 1px solid #A4BCC8;
+	display: flex; }
 
 p {
-	text-align: center; }
+	text-align: left; }
+
+fieldset {
+	width: 220px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	padding: 10px;
+	display: inherit; }
 
 .headers {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold; }
 
 img.small {
-width: 135px;
-height: 135px; }
+width: 100px;
+height: 100px; }
 
 input, button {
+	margin-top: 2px;
+	margin-bottom: 2px;
 	padding: 8px 8px 8px 8px;
 	border: 2px solid #046380;
 	border-radius: 12px;
-	border-bottom: 4px solid #000000; }
+	box-shadow: 1px 1px 1px 1px #000000; }
 
 #submit1:hover {
 	background-color:#81BEF7; }
@@ -28,25 +53,25 @@ input, button {
 	background-color: #002F2F; }
 
 #submit1 {
-	color: #046380; }
+	color: #046380;
+	margin-top: 4px; }
 
 #submit1:focus {
 	color: #002F2F; }
 
 table {
 	text-align: left;
-	margin: 0 auto;
+	margin-top: 10px;
+	margin-left: 20px;
 	background-color: #A4BCC8;
 	color: black;
-	width: 800px;
 	border-radius: 12px;
-	border-right:  4px solid #000000;
-	border-bottom: 4px solid #000000; } /* can use page 320 for depth */
+	box-shadow: 2px 2px 2px 2px #000000; } /* can use page 320 for depth */
 
 th,td {
-	padding: 7px 10px 10px 10px; }
+	padding: 4px 4px 4px 4px; }
 
 .cityName {
-	min-width: 110px; }
+	min-width: 105px; }
 
 	/* color combination from Top Pot Donuts */
