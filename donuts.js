@@ -11,7 +11,7 @@ TopPotDonuts.prototype.generateRandom = function(min, max) {
 
 TopPotDonuts.prototype.donutsPerHour = function() {
   var customers = this.generateRandom(this.minChr, this.maxChr);
-  return Math.floor(customers * this.avgDpc);
+  return Math.floor(customers * this.avgDpc) + 1;
 }
 
 TopPotDonuts.prototype.donutsPerDay = function() {
@@ -30,6 +30,7 @@ TopPotDonuts.prototype.render = function() {
   var bakedDonuts = document.getElementById('bakedDonuts');
   var row = document.createElement('tr');
   var thText = document.createTextNode(this.locationName);
+  th.className = 'cityName';
   th.appendChild(thText);
   row.appendChild(th);
   bakedDonuts.appendChild(row);

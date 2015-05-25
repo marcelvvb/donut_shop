@@ -1,47 +1,59 @@
 <!doctype html>
 <html>
   <head>
-    <title>Top Pot Donuts</title>
+    <title>Top Pot Doughnuts</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <meta name="description" content="guessing game">
       <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <p align="center">
-      <label>Location Name: <input id="location" type="text" placeholder="example: bellevue"></label>
-    </p>
-    <p align="center">
-      <label>Minimum customers per hour: <input id="minCust" type="number" placeholder="example: "></label>
-    </p>
-    <p align="center">
-      <label>Maximum customers per hour: <input id="maxCust" type="number" placeholder="example: "></label>
-    </p>
-    <p align="center">
-      <label>Average donuts purchased per customer: <input id="average" type="number" placeholder="example: "></p>
-        <p align="center">
-        <button id="submit1">Submit</button></label>
-    </p>
-    <table id="bakedDonuts" align="center">
-      <tr>
-        <th>Location</th>
-        <th>7:00am</th>
-        <th>8:00am</th>
-        <th>9:00am</th>
-        <th>10:00am</th>
-        <th>11:00am</th>
-        <th>12:00pm</th>
-        <th>1:00pm</th>
-        <th>2:00pm</th>
-        <th>3:00pm</th>
-        <th>4:00pm</th>
-        <th>5:00pm</th>
-        <th>6:00pm</th>
-        <th>Total</th>
-      </tr>
-    </table>
+      <header>
+        <img src="images/tpd-logo2014.png" class="logo" alt="Top Pot Donuts Logo" />
+        <img src="images/tpd-logo2014.png" class="fixedLogo" alt="Top Pot Donuts Logo" />
+        <h1>Top Pot Doughnuts</h1>
+      </header>
+      <section class="mainContent">
+        <fieldset class="save">
+          <legend>Daily doughnuts calculator</legend>
+          <label>City:</label>
+          <input id="location" type="text" placeholder="enter location here">
+          <label>Minimum:</label>
+          <input id="minCust" type="number" placeholder="customers per hour">
+          <label>Maximum:</label>
+          <input id="maxCust" type="number" placeholder="customers per hour">
+          <label>Avg. doughnuts per customer:</label>
+          <input id="average" type="number" placeholder="donuts per customer">
+          <button id="submit1">Submit</button>
+          </fieldset>
+          <table id="bakedDonuts" class="donutsTable">
+            <tr class="headers">
+              <th>Location</th>
+              <th>7:00am</th>
+              <th>8:00am</th>
+              <th>9:00am</th>
+              <th>10:00am</th>
+              <th>11:00am</th>
+              <th>12:00pm</th>
+              <th>1:00pm</th>
+              <th>2:00pm</th>
+              <th>3:00pm</th>
+              <th>4:00pm</th>
+              <th>5:00pm</th>
+              <th>6:00pm</th>
+              <th>Total</th>
+            </tr>
+          </table>
+      </section>
+          <footer>
+            <h2>Lorem Ipsum</h2>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+            </p>
+          </footer>
     <script src="donuts.js"></script>
   </body>
 </html>
+<!--color scheme idea from Top Pot Donuts logo-->

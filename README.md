@@ -1,0 +1,1 @@
+This is the donuts calculator. Enter your city, minimum customers per hour, maximum customers per hour and average donuts sold per customer to caclulate the total donuts you need to bake for your store.
